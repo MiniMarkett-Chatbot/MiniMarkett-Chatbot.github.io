@@ -1,0 +1,158 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Contenedor principal del chat */
+.chat-container {
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Encabezado del chat */
+.chat-header {
+    background-color: #FFD589;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chat-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chat-header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Caja donde se muestran los mensajes */
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo de los mensajes */
+.message {
+    padding: 12px;
+    border-radius: 20px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #FFD589;            ;
+    color: white;
+    align-self: flex-end;
+    border-top-left-radius: 0;
+}
+
+.bot-message {
+    background-color: #e1e1e1;
+    color: #333;
+    align-self: flex-start;
+    border-top-right-radius: 0;
+}
+
+/* Estilo de la caja de productos */
+.product-item {
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item strong {
+    color: #333;
+}
+
+/* Estilo del área de entrada */
+.input-container {
+    display: flex;
+    padding: 12px;
+    background: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus {
+    border-color: #FFD589;            ;
+}
+
+.input-container button {
+    background-color: #FFD589;            ;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #d5b271;            ;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 90%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .input-container input {
+        font-size: 14px;
+    }
+
+    .input-container button {
+        font-size: 14px;
+    }
+
+    .chat-header h1 {
+        font-size: 18px;
+    }
+}

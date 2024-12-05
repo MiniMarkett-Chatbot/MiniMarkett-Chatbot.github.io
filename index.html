@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Asistente Virtual - Mini-markett</title>
+</head>
+
+<body>
+    <div class="chat-container">
+        <!-- Encabezado con la imagen y el nombre del bot -->
+        <div class="chat-header">
+            <img src="https://img.freepik.com/vector-premium/icono-robot-diseno-signo-bot-concepto-simbolo-chatbot-servicio-soporte-voz-bot-bot-soporte-linea-vector-stock-ilustracion_100456-34.jpg" alt="Logo Bot" style="max-width: 40px; max-height: 40px; width: auto; height: auto;">
+            <h1>Mini-Markett Chatbot</h1>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <!-- Mensajes del chat -->
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Escribe un mensaje..." autocomplete="off" />
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
